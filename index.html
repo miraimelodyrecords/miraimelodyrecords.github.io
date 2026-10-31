@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ten Years of Future · Mirai Melody Records</title>
+<meta name="description" content="The story, the people and the records of Mirai Melody Records, an imagined Italian label of the 1980s. Real new music, made with the help of AI by a solo creator in Italy.">
+<link rel="icon" href="marchio.png">
+<style>
+@font-face { font-family: Michroma; src: url(Michroma-Regular.ttf) }
+:root { --navy: #0b1440; --deep: #050a24; --ice: #c4ecff; --cream: #fff6ea; --sole1: #ffd23a; --sole2: #ff7a1a; --sole3: #ff1f8e }
+* { box-sizing: border-box }
+html { background: var(--deep) }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; color: var(--cream);
+  font: 400 17px/1.55 Futura, "Futura Md BT", "Century Gothic", "Trebuchet MS", sans-serif;
+  background: linear-gradient(var(--navy), var(--deep)) }
+.righe { height: 12px; flex: none; background: repeating-linear-gradient(var(--sole3) 0 2px, transparent 2px 4px) }
+main { flex: 1; width: 100%; max-width: 920px; margin: auto; padding: 48px 24px;
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 48px; align-items: center }
+.libro { display: block; transition: transform .2s }
+.libro:hover { transform: translateY(-4px) }
+.libro img { display: block; width: 100%; height: auto; box-shadow: 0 18px 50px rgba(0, 0, 0, .6) }
+.occhiello { font: 400 11px/1.7 Michroma, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--sole1); margin: 0 }
+h1 { font-size: 46px; line-height: 1.05; letter-spacing: .03em; text-transform: uppercase; margin: 12px 0 18px; font-weight: 700 }
+p { margin: 0 0 18px }
+.bottoni { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 }
+a.bottone { padding: 13px 22px; border-radius: 4px; font-weight: 700; text-decoration: none; letter-spacing: .03em }
+a.pieno { background: linear-gradient(90deg, var(--sole1), var(--sole2)); color: var(--deep) }
+a.vuoto { border: 1px solid var(--ice); color: var(--ice) }
+a:focus-visible { outline: 2px solid var(--sole1); outline-offset: 3px }
+.nota { font-size: 14px; line-height: 1.5; color: var(--ice); border-top: 1px solid rgba(196, 236, 255, .3); padding-top: 16px; margin: 0 }
+@media (max-width: 680px) {
+  main { grid-template-columns: 1fr; gap: 32px; padding: 32px 16px }
+  .libro { max-width: 260px; margin: 0 auto }
+  h1 { font-size: 36px }
+  a.bottone { flex: 1 1 100%; text-align: center }
+}
+</style>
+</head>
+<body>
+<div class="righe"></div>
+<main>
+  <a class="libro" href="Ten_Years_of_Future.pdf"><img src="copertina.jpg" width="900" height="1278" alt="Cover of the booklet Ten Years of Future: a vinyl record and a setting sun over the Milan skyline"></a>
+  <div>
+    <p class="occhiello">Mirai Melody Records · Milan · 1980–1989</p>
+    <h1>Ten Years of Future</h1>
+    <p>The label's anniversary booklet, December 1989: the shop on Corso Buenos Aires, the people behind the records, Mirai's Milan, the series and the artists. Twelve pages, free to read.</p>
+    <div class="bottoni">
+      <a class="bottone pieno" href="Ten_Years_of_Future.pdf">Read the booklet (PDF, 13 MB)</a>
+      <a class="bottone vuoto" href="https://www.youtube.com/@Mirai_Melody_records">Watch on YouTube</a>
+    </div>
+    <p class="nota">Off the record: Mirai Melody is an imagined label and this booklet is part of a work of fiction, made with the help of AI by a solo creator in Italy. An imagined 1980s, real new music.</p>
+  </div>
+</main>
+<div class="righe"></div>
+</body>
+</html>
